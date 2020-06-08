@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <title>Madebyfideldwork</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root{
+            --naranja:#EFB73A;
+            --grisf:#1D1D1B;
+            --grism:#706F6F;
+            --grisc:#EEEEEE;
+            --negro:#222222;
+            --tierra:#EFECE7;
+        }
+        body{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 20px;
+        }
+        img{
+            width: 100%;
+        }
+		nav{
+            z-index: 2;
+            display: flex;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            width: 100%;
+            font-size: 0.75em;
+            font-weight: 650;
+            position: fixed;
+            padding: 2.5em 4em;
+            /*background: var(--naranja);*/
+            background: white;
+        }
+        nav a{
+            /text-decoration: none;/
+            text-decoration-color: white;
+            padding: 0 1em 0 0;
+            color: var(--grisf);
+            transform: color black;
+            transition: 1s transform;
+        }
+        .menu{
+            width: 100%;
+            justify-content: space-between;
+            /align-content: space-around;/
+        }
+        .icono{
+            width: 100%;
+            height: 40%;
+        }
+        h1{
+            width: 100%;
+            text-align: right;
+        }
+        h1 img{
+            width: 25px;
+            height: 25px;
+        }
+        
+        header{
+            height: 38vh;
+            padding: 7.2em 3em;
+        }
+        header h2{
+            font-size: 1.4em;
+            color: var(--grisf);
+            width: 55%;
+            text-align: justify;
+            hyphens: auto;
+            line-height: 1.3em;
+        }
+       
+        main{
+            width: 100%;
+        }
+        section{
+            position: relative;
+            height: 630px;
+            overflow: hidden;
+        }
+        .cont_txt{
+            position: absolute;
+            width: 100%;
+            padding: 13em 4em;
+            color: white;
+            z-index: 1;
+        }
+        .cont_txt h3{
+            font-weight: 700;
+            font-size: 1.5em;
+        }
+        .cont_txt h4{
+            font-weight: 400;
+            font-size: 1.5em;
+        }
+        .cont_txt p{
+            font-family: 'Roboto Mono', monospace;
+            /border-bottom: 1px solid white;/
+            font-size: 0.7em;
+            padding: 2em 0;
+        }
+        .cont_img{
+            object-fit: contain;
+            object-position: center;
+            transform: scale(1);
+            transition: 3s transform;
+        }
+        
+        section:last-child{
+            height: 300px;
+        }
+        .question{
+            width: 100;
+            text-align: center;
+            font-weight: 100;
+            font-size: 1.5em;
+            padding: 2.5em 0 1em 0;
+        }
+        .button{
+            text-align: center;
+            padding: 1.3em 0 1em 0;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 0.8em;
+        }
+        section:last-child p{
+            
+        }
+        span{
+            padding: 1em 3em;
+            border: 1px solid var(--naranja);
+            color: var(--amarillo);
+            transition: 1s background;
+        }
+        
+        .pie{
+            padding: 1.5em 2em;
+            background: var(--tierra);
+            display: flex;
+            font-family: 'Roboto Mono', monospace;
+        }
+        .vol1{
+            width: 30%;
+            line-height: 1em;
+        }
+        .vol2{
+            width: 50%;
+        }
+        .vol3{
+            width: 20%;
+            text-align: right;
+        }
+        h5{
+            color: var(--naranja);
+            font-size: 0.8em;
+            font-weight: 100;
+        }
+        p{
+            font-size: 0.7em;
+            font-weight: 100;
+        }
+        .vol2 a{
+            font-size: 0.7em;
+            font-weight: 100;
+        }
+        i{
+            color: var(--grism);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navegador">
+        <div class="menu">
+            <a href="#">Fidelwork</a>
+            <a href="#">About</a>
+            <a href="#">Sevices</a>
+            <a href="#">Work</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+        </div>    
+        <div class="icono">
+             <h1><img src="img/F.svg"></h1>
+        </div>
+    </nav>
+    <header class="encabezado">
+        <h2>Fieldwork is a design and technology studio. We build brands, digital products and services centred around the people who use them.</h2>
+    </header>
+    <main class="contenido">
+        <section>
+            <div class="cont_txt">
+                <h3>Fabled</h3>
+                <h4>A storytelling platform for kids</h4>
+                <a href=""><p>View the project</p></a>
+            </div>
+            <div class="cont_img">
+                <img src="img/Illustrated%20house%20used%20as%20inspiration%20in%20the%20Fabled%20digital%20product.png">
+            </div>
+        </section>
+        <section>
+            <div class="cont_txt">
+                <h3>Penguin Like a Woman</h3>
+                <h4>A Campaign to celebrate women in literature</h4>
+                <a href=""><p>View the project</p></a>
+            </div>
+            <div class="cont_img">
+                <img src="img/Penguin%20Like%20a%20Woman.jpeg">
+            </div>
+        </section>
+        <section>
+            <div class="cont_txt">
+                <h3>Friends of the Earth Nature Kit</h3>
+                <h4>Encouraging charity donations with a kit for nature conscious people</h4>
+                <a href=""><p>View the project</p></a>
+            </div>
+            <div class="cont_img">
+                <img src="img/Illustrated%20nature%20scene%20for%20the%20Friends%20of%20the%20Earth%20Nature%20Kit.jpeg">
+            </div>
+        </section>
+        <section>
+            <h3 class="question">Want to talk to us about your brand or digital product?</h3>
+            <p class="button"><span>Get it touch</span></p>
+        </section>
+    </main>
+    <footer class="pie">
+        <div class="vol1">
+            <h5>Find us</h5>
+            <p>Fieldwork</p>
+            <p>Colony</p>
+            <p>Jactin House</p>
+            <p>24 Hood Street</p>
+            <p>Ancoats Manchester</p>
+            <p>M4 6WX</p>
+        </div>
+        <div class="vol2">
+            <h5>Get in touch</h5>
+            <a href="maito:hello@madebyfieldwork.com">hello@madebyfieldwork.com</a>
+        </div>
+        <div class="vol3">
+            <i class="fab fa-github"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i> 
+            <i class="fab fa-twitter"></i>
+        </div>
+    </footer>
+</body>
+</html>
